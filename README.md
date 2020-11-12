@@ -1,5 +1,5 @@
 # Extensions
-***
+---
 ## Spring Web
 Build web, including RESTful, applications using Spring MVC. Uses Apache Tomcat as the default embedded container.
 
@@ -22,7 +22,7 @@ A modern server-side Java template engine for both web and standalone environmen
   
 
 # Questions 
-***
+---
 ### Etape 13
 1. 
     ```java
