@@ -1,15 +1,14 @@
 package com.example.tp5.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 import java.sql.Date;
 
 @Entity
 public class Address {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id", updatable = false, nullable = false)//permet d'auto génerer l'id pour ne pas avoir à s'en soucier dans la requête sql
     private Long id;
     private String nom;
     private Date creation;
