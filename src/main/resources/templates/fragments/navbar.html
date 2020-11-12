@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item" th:classappend=" ${#httpServletRequest.getRequestURI() == '/greeting' ? 'active':''}"><a class="nav-link" href="/greeting">Greeting</a></li>
+		<li class="nav-item" th:classappend="${#httpServletRequest.getRequestURI() == '/addresses' ? 'active':''}"><a class="nav-link" href="/addresses">Addresses</a></li>
+	</ul>
+	</nav>
+</html>
