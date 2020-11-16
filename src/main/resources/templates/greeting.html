@@ -7,6 +7,8 @@
 	</head>
 	<body>
 		<nav th:replace="fragments/navbar.html"></nav>
-		<p th:text="'Bonjour ' + ${nomTemplate} + ' !'" />
+		<div class="container">
+			<p th:text="'Bonjour ' + ${nomTemplate} + ' !'" />
+		</div>
 	</body>
 </html>
