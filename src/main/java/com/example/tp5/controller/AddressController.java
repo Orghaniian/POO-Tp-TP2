@@ -12,10 +12,15 @@ public class AddressController {
     @Autowired
     AddressRepository addressRepository;
 
-    @GetMapping("/addresses")
+    @GetMapping("/adresses")
     public String ShowAddresses(Model model){
         model.addAttribute("allAddresses",
                 addressRepository.findAll());
         return "addresses";
+    }
+
+    @GetMapping("/adresse")
+    public String ShowAddress(Model model){
+        return "address";
     }
 }

@@ -27,6 +27,7 @@ A modern server-side Java template engine for both web and standalone environmen
 
 # Questions 
 ***
+## Partie 1/2
 ### Etape 13
 1. 
     ```java
@@ -60,3 +61,14 @@ Ajout de
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 ```
 puis utilisation des classes bootstrap
+
+## Partie 2/2
+
+### Etape 6
+- Il faut une clé API pour appeler OpenWeatherMap
+- Url à appeler ``http://api.openweathermap.org/data/2.5/weather``
+- Il faut utiliser la méthode ``GET``
+- Les paramètres passent par l'URL exemple: ``"http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + apiKey + "&units=metric"``
+- 
+    - Température actuelle: ``response.main.temp`` dans la réponse à l'appel de ``api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}``
+    - Prévision météo: ``response.list`` liste des prévision dans la réponse à l'appel de ``api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}``
